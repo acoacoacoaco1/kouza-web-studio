@@ -313,20 +313,38 @@
       }
 
       #dify-chatbot-bubble-window {
-        border: 1px solid rgba(15, 118, 110, 0.18) !important;
-        border-radius: 14px !important;
-        box-shadow: 0 24px 70px rgba(23, 33, 31, 0.22) !important;
+        background: #ffffff !important;
+        border: 2px solid #0d4f4b !important;
+        border-radius: 18px !important;
+        box-shadow: 0 28px 80px rgba(23, 33, 31, 0.28) !important;
+        box-sizing: border-box !important;
+        padding: 0.7rem !important;
         position: fixed !important;
         right: 1.5rem !important;
         bottom: 5.5rem !important;
-        width: 24rem !important;
-        height: 40rem !important;
+        width: 27rem !important;
+        height: 43rem !important;
         overflow: hidden !important;
         z-index: 9999 !important;
       }
 
       #dify-chatbot-bubble-window iframe {
+        border: 0 !important;
+        border-radius: 12px !important;
+        display: block !important;
         filter: hue-rotate(-34deg) saturate(0.76) brightness(0.96) !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      @media (max-width: 560px) {
+        #dify-chatbot-bubble-window {
+          bottom: 5rem !important;
+          height: min(78vh, 40rem) !important;
+          left: 1rem !important;
+          right: 1rem !important;
+          width: auto !important;
+        }
       }
     </style>
   </body>
