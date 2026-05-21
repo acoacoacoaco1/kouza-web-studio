@@ -302,8 +302,10 @@
     <script src="https://udify.app/embed.min.js" id="C0bweYTsRmiFrZEc" defer></script>
     <style>
       #dify-chatbot-bubble-button {
+        --dify-chatbot-bubble-button-bg-color: #0d4f4b;
+        --dify-chatbot-bubble-button-box-shadow: 0 18px 38px rgba(13, 79, 75, 0.32);
         background-color: #0f766e !important;
-        box-shadow: 0 16px 36px rgba(15, 118, 110, 0.32) !important;
+        box-shadow: 0 18px 38px rgba(13, 79, 75, 0.32) !important;
         position: fixed !important;
         right: 1.5rem !important;
         bottom: 1.5rem !important;
@@ -319,7 +321,12 @@
         bottom: 5.5rem !important;
         width: 24rem !important;
         height: 40rem !important;
+        overflow: hidden !important;
         z-index: 9999 !important;
+      }
+
+      #dify-chatbot-bubble-window iframe {
+        filter: hue-rotate(-34deg) saturate(0.76) brightness(0.96) !important;
       }
     </style>
   </body>
